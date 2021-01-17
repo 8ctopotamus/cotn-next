@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Navbar from '../navbar'
 import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
 
 const name = 'Josh'
 export const siteTitle = 'Next.js Sample Website'
 
-export default ({ children, home }) => (
+const Layout = ({ children, home }) => (
   <div className={styles.container}>
     <Head>
       <link rel="icon" href="/favicon.ico" />
@@ -24,35 +24,7 @@ export default ({ children, home }) => (
       <meta name="twitter:card" content="summary_large_image" />
     </Head>
 
-    <header className={styles.header}>
-      {home ? (
-          <>
-            <img
-              src="/images/avatar.png"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-              alt={name}
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <a>
-                <img
-                  src="/images/avatar.png"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
-          </>
-        )}
-    </header>
+    <Navbar />
 
     <main>{children}</main>
 
@@ -65,3 +37,5 @@ export default ({ children, home }) => (
       )}
   </div>
 )
+
+export default Layout
