@@ -1,6 +1,9 @@
 # NextJS Blog Demo
 This is a starter template for [Learn Next.js](https://nextjs.org/learn).
 
+## Styling 
+[Tailwindcss](https://tailwindcss.com)
+
 ### [Demo &rarr;](https://next-blog-sigma-bice.vercel.app/)
 
 ### Headless CMSs to check out:

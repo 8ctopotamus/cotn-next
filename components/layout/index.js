@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Navbar from '../navbar'
-import styles from './layout.module.css'
+import Footer from '../footer'
+import styles from './index.module.css'
 
-const name = 'Josh'
 export const siteTitle = 'Next.js Sample Website'
 
 const Layout = ({ children, home }) => (
@@ -35,6 +35,8 @@ const Layout = ({ children, home }) => (
           </Link>
         </div>
       )}
+      
+    <Footer/>
   </div>
 )
 
