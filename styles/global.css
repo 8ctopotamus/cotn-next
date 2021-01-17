@@ -2,41 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
   --black: #333333;
   --blue: #5b6fc6;
   --green: #6fc39f;
 }
 
-html,
 body {
-  padding: 0;
-  margin: 0;
   font-family: 'Montserrat', sans-serif;
-  line-height: 1.6;
-  font-size: 18px;
-}
-
-body {
   background: var(--black);
   color: white;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-a {
-  color: var(--green);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-img {
-  max-width: 100%;
-  display: block;
 }
