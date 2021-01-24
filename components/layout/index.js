@@ -28,7 +28,7 @@ const Layout = ({ children, home }) => (
     <main>{children}</main>
 
     {!home && (
-        <div className={styles.backToHome}>
+        <div>
           <Link href="/">
             <a>← Back to home</a>
           </Link>
