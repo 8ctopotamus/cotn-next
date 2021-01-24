@@ -4,7 +4,7 @@ import Layout, { siteTitle } from '../components/layout'
 import Date from '../components/date'
 import { getSortedPostsData } from '../lib/posts'
 import BlockRenderer from '../components/blocks'
-import { homeData } from './testData'
+import { homeData } from '../testData'
 
 export const getStaticProps = async () => {
   const allPostsData = getSortedPostsData()
