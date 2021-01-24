@@ -23,9 +23,8 @@ const renderBlock = ({ type, ...props }, i ) => {
   return Block
 }
 
-const BlockRenderer = ({ organisms }) => {
-  // console.log(organisms)
-  return organisms.map(o => renderBlock(o))  
-}
+const BlockRenderer = ({ organisms }) => organisms 
+  ? organisms.map(o => renderBlock(o)) 
+  : null
 
 export default BlockRenderer

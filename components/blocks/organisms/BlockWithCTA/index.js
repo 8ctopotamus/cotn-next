@@ -2,18 +2,22 @@ import Container from '../../atoms/container'
 import Button from '../../atoms/button'
 import Description from '../../atoms/description'
 import Title from '../../atoms/title'
+import Section from '../../section'
 
 const BlockWithCTA = ({
+  color,
   data,
   class: className,
 }) => {
   const { title, description, button } = data
   return (
-    <Container className={`text-center ${className}`}>
-      <Title>{title}</Title>
-      <Description>{description}</Description>
-      <Button {...button} />
-    </Container>
+    <Section fill={color}>
+      <Container className={`text-center ${className}`}>
+        <Title>{title}</Title>
+        <Description>{description}</Description>
+        <Button {...button} />
+      </Container>
+    </Section>
   )
 }
 

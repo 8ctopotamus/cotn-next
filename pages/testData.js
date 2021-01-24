@@ -27,6 +27,7 @@ export const homeData = {
           "name": "block2",
           "type": "BlockWithCTA",
           "class": "",
+          "color": "purple",
           "data": {
               "title": "We can keep your customers on the trail, your orders from getting lost, and your inventory right where it needs to be.",
               "description": "We build, integrate, and repair your eCommerce gear.",
@@ -102,6 +103,7 @@ export const homeData = {
           "name": "lifestyle",
           "type": "BlockWithCTA",
           "class": "light align-left",
+          "color": "purple",
           "data": {
               "title": "If you couldn't tell, we love the wilderness. We are hardy Northerners with a passion for durable systems and spacious design. Our team is ready to help you on the next leg of your journey.",
               "button": {
