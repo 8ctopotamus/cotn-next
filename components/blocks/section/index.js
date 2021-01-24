@@ -1,5 +1,10 @@
 import Border from './border'
 
+// example props
+// className="pt-8 pb-8 text-black"
+// fill="turquoise"
+// borders={true}
+
 const Section = ({ 
   fill,
   borders, 

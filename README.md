@@ -1,6 +1,9 @@
 # NextJS Blog Demo
 This is a starter template for [Learn Next.js](https://nextjs.org/learn).
 
+## Data
+[https://gitlab.codeofthenorth.com/codeofthenorth/codeofthenorth.com/tree/dev](https://gitlab.codeofthenorth.com/codeofthenorth/codeofthenorth.com/tree/dev)
+
 ## Styling 
 [Tailwindcss](https://tailwindcss.com)
 

@@ -3,7 +3,8 @@ import Link from 'next/link'
 import Layout, { siteTitle } from '../components/layout'
 import Date from '../components/date'
 import { getSortedPostsData } from '../lib/posts'
-import Section from '../components/section'
+import BlockRenderer from '../components/blocks'
+import { homeData } from './testData'
 
 export const getStaticProps = async () => {
   const allPostsData = getSortedPostsData()
@@ -21,20 +22,9 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
 
-      <Section
-        className="pt-8 pb-8 text-black"
-        fill="turquoise"
-        borders={true}
-      >
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error rerum, labore quibusdam ducimus, distinctio nihil cumque asperiores quis, atque repudiandae sit unde explicabo perferendis et blanditiis repellat quia quae. Repellendus?</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
-      </Section>
+      <BlockRenderer organisms={ homeData.organisms } />
       
-      
-      <section className="container mx-auto">
+      {/* <section className="container mx-auto">
         <h2>Blog</h2>
         <ul>
           {allPostsData.map(({ id, date, title }) => (
@@ -49,7 +39,7 @@ export default function Home({ allPostsData }) {
             </li>          
           ))}
         </ul>
-      </section>
+      </section> */}
     </Layout>
   )
 }
