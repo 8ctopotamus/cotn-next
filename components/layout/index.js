@@ -2,12 +2,11 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Navbar from '../navbar'
 import Footer from '../footer'
-import styles from './index.module.css'
 
 export const siteTitle = 'Next.js Sample Website'
 
 const Layout = ({ children, home }) => (
-  <div className={styles.container}>
+  <div>
     <Head>
       <link rel="icon" href="/favicon.ico" />
       <meta

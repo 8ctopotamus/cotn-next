@@ -1,4 +1,5 @@
 import React from 'react'
 import '../styles/global.css'
 
-export default ({ Component, pageProps }) => <Component {...pageProps} />
+const App = ({ Component, pageProps }) => <Component {...pageProps} />
+export default App
