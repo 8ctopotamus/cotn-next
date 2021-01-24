@@ -1,3 +1,4 @@
+import Container from '../../atoms/container'
 import Button from '../../atoms/button'
 import Description from '../../atoms/description'
 import Title from '../../atoms/title'
@@ -8,11 +9,11 @@ const BlockWithCTA = ({
 }) => {
   const { title, description, button } = data
   return (
-    <div className={`container mx-auto pt-2 pb-2 ${className}`}>
+    <Container className={`text-center ${className}`}>
       <Title>{title}</Title>
       <Description>{description}</Description>
       <Button {...button} />
-    </div>
+    </Container>
   )
 }
 
