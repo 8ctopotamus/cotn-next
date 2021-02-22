@@ -1,11 +1,12 @@
 import BlockWithCTA from './organisms/BlockWithCTA'
 import ClientsBlock from './organisms/ClientsBlock'
 import COTNFullLogo from './organisms/COTNFullLogo'
+import TeamRoster from './organisms/TeamRoster'
 import WorkBlock from './organisms/WorkBlock'
 
 const renderBlock = ({ type, ...props }, i ) => {
   const key = `${type}_${props.name}`
-  let Block = <div className="container mx-auto">No block chosen.</div>
+  let Block = <div className="container mx-auto mt-2 mb-2 text-center">No matching block found.</div>
   switch(type) {
     case 'COTNFullLogo':
       Block = <COTNFullLogo {...props} key={key} />
@@ -18,6 +19,9 @@ const renderBlock = ({ type, ...props }, i ) => {
       break
     case 'ClientsBlock':
       Block = <ClientsBlock {...props} key={key} />
+      break
+    case 'TeamRoster':
+      Block = <TeamRoster {...props} key={key} />
       break
   }
   return Block

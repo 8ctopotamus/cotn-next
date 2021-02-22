@@ -8,8 +8,7 @@ const WorkBlock = ({
   data,
   class: className,
 }) => {
-  const { image, workDescription } = data
-  const { title, button, description } = workDescription
+  const { image, title, button, description } = data
   const gridClasses = image ? 'grid md:grid-cols-2' : ''
   return (
     <Container className={`${className} ${gridClasses}`}>
@@ -21,7 +20,7 @@ const WorkBlock = ({
       <div className={image ? 'p-5' : 'container mx-auto'}>
         <Title>{title}</Title>
         <Description>{description}</Description>
-        <Button {...button} />
+        {button && <Button {...button} />}
       </div>
     </Container>
   )

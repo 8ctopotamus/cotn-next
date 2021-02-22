@@ -27,14 +27,6 @@ const Layout = ({ children, home }) => (
 
     <main>{children}</main>
 
-    {!home && (
-        <div>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )}
-      
     <Footer/>
   </div>
 )

@@ -1,10 +1,11 @@
+const axios = require('axios')
 import Head from 'next/head'
 import Layout from '../../components/layout'
-import Date from '../../components/date'
-import { getAllPostIds, getPostData } from '../../lib/posts'
+import BlockRenderer from '../../components/blocks'
+import { getAllGitlabIds, getRawData } from '../../lib/gitlab'
 
-export default ({ postData }) => {
-  const { title, date, contentHtml } = postData
+const Post = ({ data }) => {
+  const { title } = data
   return (
     <Layout>
       <Head>
@@ -12,26 +13,25 @@ export default ({ postData }) => {
       </Head>
       <article>
         <h1>{title}</h1>
-        <div>
-          <Date dateString={date} />
-        </div>
-        <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+        <BlockRenderer organisms={ data.organisms } />
       </article>
     </Layout>
   )
 }
 
+export default Post
+
 export const getStaticProps = async ({ params }) => {
-  const postData = await getPostData(params.id)
+  const data = await getRawData('blog', params.id)
   return {
     props: {
-      postData
+      data,
     }
   }
 }
 
 export const getStaticPaths = async () => {
-  const paths = getAllPostIds()
+  const paths = await getAllGitlabIds('blog')
   return {
     paths,
     fallback: false

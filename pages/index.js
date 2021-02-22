@@ -21,25 +21,7 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-
       <BlockRenderer organisms={ homeData.organisms } />
-      
-      {/* <section className="container mx-auto">
-        <h2>Blog</h2>
-        <ul>
-          {allPostsData.map(({ id, date, title }) => (
-            <li key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
-              <br />
-              <small>
-                <Date dateString={date} />
-              </small>
-            </li>          
-          ))}
-        </ul>
-      </section> */}
     </Layout>
   )
 }
