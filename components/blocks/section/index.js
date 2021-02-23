@@ -13,16 +13,16 @@ const Section = ({
 }) => {
   return (
     <>
-      <Border fill={fill} />
+      {/* <Border fill={fill} /> */}
       <section { ...props } style={{backgroundColor: fill ? fill : 'inherit'}}>
         <div className="container mx-auto">
         { children }
         </div>
       </section>
-      <Border 
+      {/* <Border 
         fill={fill} 
         style={{ transform: `scale(-1)` }} 
-      />
+      /> */}
     </>
   )
 }

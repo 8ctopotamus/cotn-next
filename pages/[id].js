@@ -1,4 +1,3 @@
-const axios = require('axios')
 import Head from 'next/head'
 import Layout from '../components/layout'
 import BlockRenderer from '../components/blocks'

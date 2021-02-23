@@ -1,4 +1,3 @@
-const axios = require('axios')
 import Head from 'next/head'
 import Layout from '../../components/layout'
 import BlockRenderer from '../../components/blocks'
@@ -11,8 +10,10 @@ const Post = ({ data }) => {
       <Head>
         <title>{title}</title>
       </Head>
+      <header className="text-center bg-gray-500 p-10 mb-10">
+        <h1 className="text-6xl font-bold">title</h1>
+      </header>
       <article>
-        <h1>{title}</h1>
         <BlockRenderer organisms={ data.organisms } />
       </article>
     </Layout>

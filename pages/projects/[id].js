@@ -1,4 +1,3 @@
-const axios = require('axios')
 import Head from 'next/head'
 import Layout from '../../components/layout'
 import BlockRenderer from '../../components/blocks'
@@ -13,7 +12,7 @@ const Project = ({ data }) => {
       </Head>
       <article>
         <h1>{title}</h1>
-        <BlockRenderer organisms={ data.organisms } />
+        <pre>{JSON.stringify(data, null, 2)}</pre>
       </article>
     </Layout>
   )

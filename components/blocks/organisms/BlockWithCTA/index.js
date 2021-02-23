@@ -12,7 +12,7 @@ const BlockWithCTA = ({
   const { title, description, button } = data
   return (
     <Section fill={color}>
-      <Container className={`text-center ${className}`}>
+      <Container className={className}>
         <Title>{title}</Title>
         <Description>{description}</Description>
         <Button {...button} />
