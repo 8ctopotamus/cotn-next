@@ -1,9 +1,9 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import Navbar from '../navbar'
-import Footer from '../footer'
+import Head from 'next/head';
+import Link from 'next/link';
+import Navbar from '../navbar';
+import Footer from '../footer';
 
-export const siteTitle = 'Next.js Sample Website'
+export const siteTitle = 'Code of the North';
 
 const Layout = ({ children, home }) => (
   <div>
@@ -27,8 +27,8 @@ const Layout = ({ children, home }) => (
 
     <main>{children}</main>
 
-    <Footer/>
+    <Footer />
   </div>
-)
+);
 
-export default Layout
+export default Layout;
