@@ -5,15 +5,15 @@ import Container from '../../components/blocks/atoms/container'
 import Title from '../../components/blocks/atoms/title'
 import { getAllDirFilesContentsAndMeta } from '../../lib/gitlab.js'
 
-const CareersIndex = ({ data }) => (
+const BlogIndex = ({ data }) => (
   <Layout>
     <Head>
-      <title>Careers</title>
+      <title>Blog</title>
     </Head>
     <Container>
-      <Title className="text-center">Careers</Title>
+      <Title className="text-center">Blog</Title>
       {data.map(({ name, content }) => {
-        const slug = `/careers/${name.replace('.json', '')}`
+        const slug = `/posts/${name.replace('.json', '')}`
         return (
           <div className="mb-6" key={slug}>
             <Link href={slug}>
@@ -28,11 +28,11 @@ const CareersIndex = ({ data }) => (
 )
 
 export const getStaticProps = async () => {
-  const data = await getAllDirFilesContentsAndMeta('careers')
+  const data = await getAllDirFilesContentsAndMeta('posts')
   return { props: { data } }
 }
 
-export default CareersIndex
+export default BlogIndex
 
 
 

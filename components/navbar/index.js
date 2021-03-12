@@ -76,22 +76,14 @@ const Navbar = () => {
                   aria-orientation="vertical"
                   aria-labelledby="user-menu"
                 >
-                  <Link href="/work">
+                  <Link href="/projects">
                     <a
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                       role="menuitem"
                     >
                       Our Work
                     </a>
-                  </Link>
-                  <Link href="/about">
-                    <a
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                      role="menuitem"
-                    >
-                      About Us
-                    </a>
-                  </Link>
+                  </Link>                  
                   <Link href="/careers">
                     <a
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
@@ -100,12 +92,12 @@ const Navbar = () => {
                       Careers
                     </a>
                   </Link>
-                  <Link href="/moreinfo">
+                  <Link href="/posts">
                     <a
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                       role="menuitem"
                     >
-                      More Info
+                      Blog
                     </a>
                   </Link>
                   <Link href="/contact">
@@ -114,14 +106,6 @@ const Navbar = () => {
                       role="menuitem"
                     >
                       Contact Us
-                    </a>
-                  </Link>
-                  <Link href="/client">
-                    <a
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                      role="menuitem"
-                    >
-                      Client Login
                     </a>
                   </Link>
                 </div>

@@ -8,12 +8,12 @@ import { getAllDirFilesContentsAndMeta } from '../../lib/gitlab.js'
 const CareersIndex = ({ data }) => (
   <Layout>
     <Head>
-      <title>Careers</title>
+      <title>Projects</title>
     </Head>
     <Container>
-      <Title className="text-center">Careers</Title>
+      <Title className="text-center">Projects</Title>
       {data.map(({ name, content }) => {
-        const slug = `/careers/${name.replace('.json', '')}`
+        const slug = `/projects/${name.replace('.json', '')}`
         return (
           <div className="mb-6" key={slug}>
             <Link href={slug}>
@@ -28,7 +28,7 @@ const CareersIndex = ({ data }) => (
 )
 
 export const getStaticProps = async () => {
-  const data = await getAllDirFilesContentsAndMeta('careers')
+  const data = await getAllDirFilesContentsAndMeta('projects')
   return { props: { data } }
 }
 
