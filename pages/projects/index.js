@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import Layout from '../../components/layout'
 import Container from '../../components/blocks/atoms/container'
 import Title from '../../components/blocks/atoms/title'
+import PostList from '../../components/post-list'
 import { getAllDirFilesContentsAndMeta } from '../../lib/gitlab.js'
 
 const CareersIndex = ({ data }) => (
@@ -12,17 +12,7 @@ const CareersIndex = ({ data }) => (
     </Head>
     <Container>
       <Title className="text-center">Projects</Title>
-      {data.map(({ name, content }) => {
-        const slug = `/projects/${name.replace('.json', '')}`
-        return (
-          <div className="mb-6" key={slug}>
-            <Link href={slug}>
-              <h2 className="text-2xl cursor-pointer">{name}</h2>  
-            </Link> 
-            <p>{content.excerpt}</p>
-          </div>
-        )
-      })}
+      <PostList posts={data}/>
     </Container>
   </Layout>
 )
