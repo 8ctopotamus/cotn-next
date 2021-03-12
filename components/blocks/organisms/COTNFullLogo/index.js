@@ -1,4 +1,4 @@
-import Container from '../../atoms/container'
+import Container from '../../../atoms/container'
 import Logo from '../../../logo'
 
 const COTNFullLogo = () => {

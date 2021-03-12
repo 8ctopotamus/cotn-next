@@ -1,5 +1,5 @@
-import Container from '../../atoms/container'
-import Title from '../../atoms/title'
+import Container from '../../../atoms/container'
+import Title from '../../../atoms/title'
 
 const ClientsBlock = ({
   data,

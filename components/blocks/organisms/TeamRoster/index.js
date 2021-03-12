@@ -1,7 +1,6 @@
-import Container from '../../atoms/container'
-import Button from '../../atoms/button'
-import Description from '../../atoms/description'
-import Title from '../../atoms/title'
+import Container from '../../../atoms/container'
+import Description from '../../../atoms/description'
+import Title from '../../../atoms/title'
 
 const TeamRoster = ({
   name,

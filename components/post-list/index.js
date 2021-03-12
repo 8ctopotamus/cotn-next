@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Button from '../blocks/atoms/button'
+import Button from '../atoms/button'
 
 const PostList = ({ posts }) => {
   return posts.map(({ name, content }) => {

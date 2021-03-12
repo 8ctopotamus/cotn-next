@@ -1,4 +1,4 @@
-import Container from '../../atoms/container';
+import Container from '../../../atoms/container'
 
 const TwoColumnText = ({ data, class: className }) => {
   const { leftText, rightText } = data;

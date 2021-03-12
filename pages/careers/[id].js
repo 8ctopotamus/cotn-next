@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Layout from '../../components/layout'
-import Container from '../../components/blocks/atoms/container'
-import Title from '../../components/blocks/atoms/title'
-import Description from '../../components/blocks/atoms/description'
+import Container from '../../components/atoms/container'
+import Title from '../../components/atoms/title'
+import Description from '../../components/atoms/description'
 import BlockWithCTA from '../../components/blocks/organisms/BlockWithCTA'
 import { getAllGitlabIds, getRawData } from '../../lib/gitlab'
 

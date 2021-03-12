@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Layout from '../../components/layout';
-import Container from '../../components/blocks/atoms/container';
-import Title from '../../components/blocks/atoms/title';
+import Container from '../../components/atoms/container';
+import Title from '../../components/atoms/title';
 import BlockRenderer from '../../components/blocks';
 import { getAllGitlabIds, getRawData } from '../../lib/gitlab';
 
