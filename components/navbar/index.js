@@ -78,7 +78,6 @@ const Navbar = () => {
                 >
                   <Link href="/work">
                     <a
-                      href="/work"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                       role="menuitem"
                     >
@@ -87,7 +86,6 @@ const Navbar = () => {
                   </Link>
                   <Link href="/about">
                     <a
-                      href="/about"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                       role="menuitem"
                     >
@@ -96,7 +94,6 @@ const Navbar = () => {
                   </Link>
                   <Link href="/careers">
                     <a
-                      href="/careers"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                       role="menuitem"
                     >
@@ -105,7 +102,6 @@ const Navbar = () => {
                   </Link>
                   <Link href="/moreinfo">
                     <a
-                      href="/moreinfo"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                       role="menuitem"
                     >
@@ -114,7 +110,6 @@ const Navbar = () => {
                   </Link>
                   <Link href="/contact">
                     <a
-                      href="/contact"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                       role="menuitem"
                     >
@@ -123,7 +118,6 @@ const Navbar = () => {
                   </Link>
                   <Link href="/client">
                     <a
-                      href="/client"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                       role="menuitem"
                     >
